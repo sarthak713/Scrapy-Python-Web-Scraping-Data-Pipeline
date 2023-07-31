@@ -1,12 +1,10 @@
--
-
 # Scrapy Unleashed: Master Python Web Scraping & Data Pipeline
 
 [Udemy Course](https://www.udemy.com/course/scrapy-masterclass-python-web-scraping-and-data-pipelines/): Learn to Build, Analyze, and Optimize Your Own Web Scrapers with Scrapy
 
 ---
 
-#### Modules: 
+#### Modules:
 
 - Xpath First Steps
 - Hello Scrapy
