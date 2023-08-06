@@ -4,6 +4,7 @@
 - Used for extracting values from XML documents
 - Can be applied to HTML documents also, since HTML uses similar syntax to XML
 - It returns html nodes
+- Practice XPath queries with HTML/XML documents: http://xpather.com/ 
 
 ### How Xpath works ?
 
@@ -31,5 +32,32 @@
     - get text of all nodes with class title, regardless of tag type
 11. //span[@class='title'] | //div[@class='title']
     - get all span & div with class title using '|'
+
+---
+
+### Axes
+
+- Used to define relations between nodes in a document to make more powerful queries
+
+1. //span[@class='author']/ancestor::ul
+    - Select ul ancestor of span with class author
+    - Selects all ul ancestors
+2. //span[@class='author']/ancestor::ul[1]
+    - Select the first ul ancestor of span with class author 
+3. //span/parent::li
+    - Select parent of span which is li
+4. //li[@class='book']/child::span[@class='price']
+    - Select span with class price which is child of li with class book
+5. //ul/descendant::span[@class='price']
+    - Select all descendant of ul which are span with price class
+    - Similar to //ul//::span[@class='price']
+6. //li[@class='book']/following::span
+    - Select all spans inside li leaving the first li node, and other spans also
+7. //div[@class='header']/following-sibling::span
+    - Select span siblings of div with class header
+8. //span[@class='price']/preceding::span
+    - Selects all spans before span with price class, not necessarily having the same parent
+9. //span[@class='price']/preceding-sibling::span
+    - Selects spans before price span but limit to same parent
 
 ---
