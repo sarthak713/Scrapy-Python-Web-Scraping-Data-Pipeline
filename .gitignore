@@ -5,3 +5,7 @@ lib64/
 python3.10/
 site-packages/
 pyvenv.cfg
+__pycache__/
+__init.py__
+scrapy.cfg
+pyvenv.cfg

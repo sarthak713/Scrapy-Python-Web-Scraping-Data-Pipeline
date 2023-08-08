@@ -58,3 +58,12 @@
 - pipelines.py is used to define how & where to save extracted data
 
 ---
+
+### Scrapy Spider
+
+- Way 1: Create a new file in spiders directory
+- Way 2: Use command ```scrapy genspider spider_name domain_name```
+- Run Spider ```scrapy crawl spider_name```
+- Store Data ```scrapy crawl spider_name -O filename.csv```
+
+---
