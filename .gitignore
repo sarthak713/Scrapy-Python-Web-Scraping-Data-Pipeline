@@ -9,3 +9,4 @@ __pycache__/
 __init.py__
 scrapy.cfg
 pyvenv.cfg
+*.csv

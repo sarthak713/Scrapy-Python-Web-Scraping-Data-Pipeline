@@ -67,3 +67,32 @@
 - Store Data ```scrapy crawl spider_name -O filename.csv```
 
 ---
+
+### Item Loaders
+
+- Item = Data Container
+- An item can be filled like a regular Python dictionary. 
+    - Example: item['price]=listing.xpath('.//div[@class="si-listing__photo-price"]/span/text()').get()
+- ItemLoader = Built-in Scrapy class that can modify data recieved from the spider using Input & Output Processors
+- Input Processor   
+    - works on data as it gets recieved from the spider
+    - Example: removing whitespace & useless characters from data
+- Output Processor   
+    - works on data before it gets saved
+    - Example: data structuring
+- Used to extract and transform data from web pages in real time
+
+---
+
+### Spiders
+
+- The Spider class we inherit our basic spider from is Base Class for other more complex spiders
+- It can do basic web scraping stuff
+- Scrapy provides other child spiders to provide more Specific logic: XML feed spider, CSV feed, sitemap, crawl spider
+
+- Crawl spider follows links
+    - Just provide url of start page & it starts following all links
+    - Whenever it gets the HTML of a page, it is passed to a callback function to extract the required data from the page.
+    - For this spider to work, it needs to be confined by some rules or it will continue crawling links indefinitely
+
+---
