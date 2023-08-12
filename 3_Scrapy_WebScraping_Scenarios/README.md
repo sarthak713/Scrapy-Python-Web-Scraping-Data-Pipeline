@@ -10,7 +10,8 @@
 ---
 
 #### Login To Websites
-- Done in 2_Scapy module in 'quotes project'
+
+- [Implemented Here](https://github.com/sarthak713/Scrapy-Python-Web-Scraping-Data-Pipeline/tree/main/2_Scrapy/projects/quotes/quotes)
 
 ---
 
