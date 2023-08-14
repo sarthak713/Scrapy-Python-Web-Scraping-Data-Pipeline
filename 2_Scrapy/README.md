@@ -1,4 +1,4 @@
-### What is a Web Bot?
+### What is Web Bot?
 
 - We navigate website through browsers
 - But we may not recieve same HTML/HTTP response as we get in a browser
