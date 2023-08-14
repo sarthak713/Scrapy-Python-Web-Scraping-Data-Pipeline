@@ -34,8 +34,9 @@
     - JavaScript is used to place the returned content in the pages's HTML
 
 
-#### Handling Ajax Requests: 1
+#### Handling Ajax Requests
 
 - [Implemented Here](https://github.com/sarthak713/Scrapy-Python-Web-Scraping-Data-Pipeline/tree/main/projects/naukri/naukri)
 
-  
+---
+
