@@ -35,3 +35,7 @@
 
 
 #### Handling Ajax Requests: 1
+
+- [Implemented Here](https://github.com/sarthak713/Scrapy-Python-Web-Scraping-Data-Pipeline/tree/main/projects/naukri/naukri)
+
+  
