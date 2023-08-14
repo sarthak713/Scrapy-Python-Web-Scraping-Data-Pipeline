@@ -16,13 +16,22 @@
 ---
 
 #### User Agents
-- One of the headers sent alongside web-requests
+- It is one of the headers sent alongside web-requests
 - Contains info about the browser
 - If web-server detects client is using User-Agent it cannot recognize, it may block the requests
 - Check status using Scrapy Shell:
     - ```scrapy shell "linktowebsite"```
+    - The status of response may be 403: forbidden
     - ```view(response)```
     - Check user agent in network tab, copy
-    - ```scrapy shell -s USER_AGENT="paste user agent" "linktowebsite"```
+    - Change User Agent ```scrapy shell -s USER_AGENT="paste user agent" "linktowebsite"```
 
 ---
+
+#### AJAX
+- Asynchronous JavaScript & XML
+    - Used for loading content dynamically after the web page finishes loading
+    - JavaScript is used to place the returned content in the pages's HTML
+
+
+#### Handling Ajax Requests: 1
