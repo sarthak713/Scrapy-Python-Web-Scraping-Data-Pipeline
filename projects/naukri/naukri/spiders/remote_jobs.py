@@ -15,7 +15,8 @@ class RemoteJobsSpider(scrapy.Spider):
     def parse(self, response):
         payload = json.loads(response.body)
         total = payload['noOfJobs']
-        page_count = ceil(total / 20)
+        # page_count = ceil(total / 20)
+        page_count = 2
         for j in payload['jobDetails']:
             i = ItemLoader(item=NaukriItem())
             i.add_value('title', j['title'])

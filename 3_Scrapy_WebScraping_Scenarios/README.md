@@ -40,3 +40,19 @@
 
 ---
 
+#### Caching Responses
+
+- When a project scrapes website containing thousands of pages, it doesn't make sense to scrape each and every page again.
+- If Scrapy knows that a page has been  visited & data has been extracted, this will save time and network bandwidth.
+- Go to ```settings.py```, to the bottom
+    - Uncomment all fields
+    - Caching is disabled by default in scrapy projects, caching enables scrapy to save crawled pages, so when page is encountered again it refers to cached version instead of re-downloading
+- Fields:
+    - HTTPCACHE_ENABLED = True
+    - HTTPCACHE_EXPIRATION_SECS = 1000 (defines how long scrapy considers the cache as valid before attempting to redownload)
+    - HTTPCACHE_DIR = 'httpcache' where data is saved
+
+---
+
+#### Image Harvesting
+
