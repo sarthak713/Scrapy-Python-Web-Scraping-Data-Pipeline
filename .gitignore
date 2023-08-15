@@ -11,4 +11,4 @@ scrapy.cfg
 pyvenv.cfg
 *.csv
 *.json
-.scrapy/*
+.scrapy/

@@ -55,4 +55,17 @@
 ---
 
 #### Image Harvesting
+##### Using Scrapy's image pipeline to download & process images from web pages
 
+- [Implemented Here](https://github.com/sarthak713/Scrapy-Python-Web-Scraping-Data-Pipeline/tree/main/projects/freeimages/freeimages)
+
+1. Plain Python:
+    - Get image URL using Xpath
+    - Download image using Requests or similar module
+2. Scrapy's Images Pipeline:
+    - Automatic thumbnail creation (useful for preparing data from ML models)
+    - Only downloaded images with minimum dimensions (saves you a data cleansing step)
+    - Set expiration date for images to be redownloaded (useful when working with a constantly changing source)
+    - Downloads images in parallel to speed the process
+
+---
